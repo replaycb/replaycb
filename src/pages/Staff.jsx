@@ -22,10 +22,10 @@ const categories = [
                 youtube: "https://www.youtube.com/embed/104NfwL5kQ4",
             },
             {
-                name: "Judge Name",
+                name: "Un3h",
                 image: "https://placehold.co/300x300/1a1a1a/ffffff?text=Vocals+2",
-                twitter: "https://twitter.com/username",
-                youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                twitter: "https://x.com/un3hcorn",
+                youtube: "https://www.youtube.com/embed/duYkd5w9rCU",
             },
         ],
     },
@@ -50,9 +50,9 @@ const categories = [
         name: "Art Judges",
         members: [
             {
-                name: "Judge Name",
+                name: "Ena",
                 image: "https://placehold.co/300x300/1a1a1a/ffffff?text=Art+1",
-                twitter: "https://twitter.com/username",
+                twitter: "https://x.com/_EnaMeii",
                 youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
             },
             {
