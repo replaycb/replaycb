@@ -39,9 +39,9 @@ const categories = [
                 youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
             },
             {
-                name: "Judge Name",
+                name: "KT",
                 image: "https://placehold.co/300x300/1a1a1a/ffffff?text=Mix+2",
-                twitter: "https://twitter.com/username",
+                twitter: "https://x.com/katieheehee",
                 youtube: "https://www.youtube.com/embed/dQw4w9WgXcQ",
             },
         ],
