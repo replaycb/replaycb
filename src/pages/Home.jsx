@@ -120,7 +120,7 @@ export default function Home() {
                     ref={imgRef}
                     src={logoImage}
                     alt="Replay CB"
-                    className="w-full px-8 object-contain"
+                    className="w-full object-contain"
                     style={{ opacity: 0 }}
                 />
             </section>
@@ -156,12 +156,12 @@ export default function Home() {
                     <p className="text-sm font-arose tracking-widest text-white/50 uppercase mb-3">
                         Countdown to
                     </p>
-                    <h2 className="text-5xl font-arose font-bold text-white mb-14">
+                    <h2 className="text-3xl sm:text-5xl font-arose font-bold text-white mb-14">
                         Registration <span className="text-main-100"></span>
                     </h2>
 
                     {timeLeft ? (
-                        <div className="flex gap-8 sm:gap-16">
+                        <div className="flex gap-4 sm:gap-8 md:gap-16">
                             {[
                                 { label: "Days", value: timeLeft.days },
                                 { label: "Hours", value: timeLeft.hours },
@@ -172,7 +172,7 @@ export default function Home() {
                                     key={label}
                                     className="flex flex-col items-center gap-3"
                                 >
-                                    <span className="text-7xl sm:text-8xl font-arose font-bold text-white tabular-nums">
+                                    <span className="text-5xl sm:text-7xl md:text-8xl font-arose font-bold text-white tabular-nums">
                                         {pad(value)}
                                     </span>
                                     <span className="text-xs font-arose tracking-widest text-white/50 uppercase">

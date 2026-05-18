@@ -99,7 +99,7 @@ export default function Rules() {
                     </span>
                 </h3>
 
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-2">
                     <div></div>
                     <div>
                         <ol
