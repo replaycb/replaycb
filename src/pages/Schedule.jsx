@@ -1,0 +1,56 @@
+const rounds = [
+    {
+        round: "Round 1",
+        submission: "Sep 1 – Oct 31",
+        judging: "Nov 1 – Nov 7",
+    },
+    {
+        round: "Round 2",
+        submission: "Nov 8 – Jan 9",
+        judging: "Jan 10 – Jan 16",
+    },
+    {
+        round: "Round 3",
+        submission: "Jan 17 – Mar 13",
+        judging: "Mar 14 – Mar 20",
+    },
+];
+
+export default function Schedule() {
+    return (
+        <main className="max-w-6xl mx-auto px-6 py-16">
+            <div className="text-center mb-16">
+                <h1 className="text-6xl font-arose font-bold text-white mb-3">
+                    Schedule
+                </h1>
+            </div>
+
+            <div className="max-w-lg mx-auto flex flex-col">
+                {rounds.map(({ round, submission, judging }, i) => (
+                    <div key={round} className="flex gap-6">
+                        {/* Timeline spine */}
+                        <div className="flex flex-col items-center">
+                            <div className="w-2.5 h-2.5 rounded-full bg-main-100 mt-1 shrink-0" />
+                            {i < rounds.length - 1 && (
+                                <div className="w-px flex-1 bg-white/10 my-1" />
+                            )}
+                        </div>
+
+                        {/* Content */}
+                        <div className="pb-10">
+                            <h2 className="text-3xl font-arose text-white mb-2">
+                                {round}
+                            </h2>
+                            <div className="flex flex-col gap-1 text-lg text-white/60">
+                                <span>{submission}</span>
+                                <span className="text-white/40">
+                                    Judging: {judging}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </main>
+    );
+}
