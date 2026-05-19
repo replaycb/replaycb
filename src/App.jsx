@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import PageTransition from "./components/PageTransition";
+import FAQ from "./pages/FAQ";
 import Home from "./pages/Home";
 import Rules from "./pages/Rules";
 import Schedule from "./pages/Schedule";
@@ -38,6 +39,7 @@ function App() {
                     <Route path="/rules" element={<Rules />} />
                     <Route path="/scoring" element={<Scoring />} />
                     <Route path="/staff" element={<Staff />} />
+                    <Route path="/faq" element={<FAQ />} />
                 </Routes>
             </PageTransition>
             <Footer />

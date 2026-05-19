@@ -177,6 +177,9 @@ export default function Rules() {
                             Teams must provide the following materials upon
                             submission:
                             <ul className="list-disc list-outside pl-5 mt-2">
+                                <li>
+                                    A link to the CB Entry whose song you chose
+                                </li>
                                 <li>Alternate video link (.mp4)</li>
                                 <li>Mix file (.wav)</li>
                                 <li>Acapella file (.mp3)</li>
