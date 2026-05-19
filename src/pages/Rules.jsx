@@ -69,7 +69,7 @@ export default function Rules() {
                                 members.
                             </li>
                             <p className="pl-4 border-l border-white/20 italic">
-                                E.g., The minimum number of team members is 3
+                                i.e., The minimum number of team members is 3
                                 and the maximum is 14.
                             </p>
                         </ul>
