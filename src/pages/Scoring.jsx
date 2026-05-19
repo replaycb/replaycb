@@ -12,9 +12,12 @@ export default function Scoring() {
                 <h1 className="text-6xl font-arose font-bold text-white mb-3">
                     Scoring
                 </h1>
+                <p className="text-white/70 text-lg max-w-2xl mx-auto font-arose">
+                    More coming soon...
+                </p>
             </div>
 
-            <section className="flex flex-col items-center">
+            <section className="flex flex-col items-center hidden">
                 <h2 className="text-3xl font-arose text-white mb-6 border-b border-white/10 pb-3 w-full max-w-md">
                     Scoring <span className="text-main-100">Breakdown</span>
                 </h2>

@@ -44,6 +44,20 @@
     }
 }
 
+@keyframes pulse-red-white {
+    0%,
+    100% {
+        color: #a60000;
+    }
+    50% {
+        color: #ffffff;
+    }
+}
+
+.animate-pulse-red-white {
+    animation: pulse-red-white 2s ease-in-out infinite;
+}
+
 body {
     margin: 0;
     scrollbar-width: none; /* Firefox */

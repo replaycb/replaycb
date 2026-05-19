@@ -6,7 +6,7 @@ const links = [
     { to: "/rules", label: "Rules" },
     { to: "/schedule", label: "Schedule" },
     { to: "/scoring", label: "Scoring" },
-    { to: "/staff", label: "Staff" },
+    { to: "/staff", label: "Judges" },
 ];
 
 export default function Navbar() {

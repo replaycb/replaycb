@@ -1,5 +1,10 @@
 const rounds = [
     {
+        round: "Registration",
+        submission: "July 1 – Aug 31",
+        judging: "",
+    },
+    {
         round: "Round 1",
         submission: "Sep 1 – Oct 31",
         judging: "Nov 1 – Nov 7",
@@ -38,14 +43,18 @@ export default function Schedule() {
 
                         {/* Content */}
                         <div className="pb-10">
-                            <h2 className="text-3xl font-arose text-white mb-2">
+                            <h2
+                                className={`text-3xl font-arose mb-2 ${round === "Registration" ? "animate-pulse-red-white" : "text-white"}`}
+                            >
                                 {round}
                             </h2>
                             <div className="flex flex-col gap-1 text-lg text-white/60">
                                 <span>{submission}</span>
-                                <span className="text-white/40">
-                                    Judging: {judging}
-                                </span>
+                                {round !== "Registration" && (
+                                    <span className="text-white/40">
+                                        Judging: {judging}
+                                    </span>
+                                )}
                             </div>
                         </div>
                     </div>
