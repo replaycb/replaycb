@@ -197,7 +197,7 @@ export default function Home() {
                                     key={label}
                                     className="flex flex-col items-center gap-3"
                                 >
-                                    <span className="text-5xl sm:text-7xl md:text-8xl font-arose font-bold text-white tabular-nums">
+                                    <span className="text-5xl sm:text-7xl md:text-8xl font-arose font-bold text-white tabular-nums inline-block w-[2ch] text-center">
                                         {pad(value)}
                                     </span>
                                     <span className="text-xs font-arose tracking-widest text-white/50 uppercase">
