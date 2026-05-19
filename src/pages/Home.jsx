@@ -115,7 +115,7 @@ export default function Home() {
             </div>
 
             {/* Hero — full screen */}
-            <section className="h-full flex items-center justify-center overflow-hidden">
+            <section className="h-screen flex items-center justify-center overflow-hidden">
                 <img
                     ref={imgRef}
                     src={logoImage}

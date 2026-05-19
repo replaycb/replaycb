@@ -120,15 +120,24 @@ export default function Rules() {
                                 Competition Theme
                                 <ul className="font-normal text-white/80 mt-1 leading-relaxed list-disc list-outside pl-5">
                                     <li>
-                                        Replay Chorus Battle is a chorus battle
-                                        cover competition for songs that have
-                                        been entered in at least one previous
-                                        chorus battle.
+                                        RE:CB is a chorus battle with the
+                                        limitation that teams must cover songs
+                                        that have been entered in at least one
+                                        previous chorus battle. not for remaking
+                                        other team's entries.
                                     </li>
+                                    <p className="pl-4 border-l border-white/20 italic my-1">
+                                        While we encourage participants to take
+                                        song inspiration, we are{" "}
+                                        <strong className="text-white">
+                                            not
+                                        </strong>{" "}
+                                        asking teams to remake other teams'
+                                        chorus battle entries.
+                                    </p>
                                     <li>
-                                        This means original songs are not
-                                        permitted, as they do not fit the event
-                                        theme.
+                                        Original songs are not permitted, as
+                                        they do not fit the event theme.
                                     </li>
                                 </ul>
                             </li>

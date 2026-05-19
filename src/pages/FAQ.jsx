@@ -26,7 +26,7 @@ const faqs = [
         a: "As long as participants can prove that the video was originally a chorus battle entry, it is permitted. While unlisted videos are OK, private videos are not. All participants should be able to view the original entry.",
     },
     {
-        q: "Do I have to ask the previous Chorus Battle Team for permission?",
+        q: "Do I have to ask the previous chorus battle team for permission?",
         a: "The purpose of this chorus battle is to help participants find song inspiration from previous chorus battles. As long as the only element from the chorus battle entry your team is paying tribute to is the song itself, participants will not have to ask for permission, as multiple parties can cover the same song.",
         exceptions: [
             "If the song your team would like to cover is another team's original song, you may have to ask permission to cover their song or use their instrumental.",
@@ -77,7 +77,7 @@ export default function FAQ() {
             <ul ref={listRef} className="flex flex-col gap-8">
                 {faqs.map(({ q, a, exceptions }, i) => (
                     <li key={i} className="border-b border-white/10 pb-8">
-                        <p className="text-white font-arose font-semibold text-lg mb-2">
+                        <p className="text-white font-semibold text-lg mb-2">
                             {q}
                         </p>
                         <p className="text-white/70 leading-relaxed">{a}</p>
@@ -88,7 +88,7 @@ export default function FAQ() {
                                         key={j}
                                         className="pl-4 border-l-2 border-main-100/50 text-white/50 leading-relaxed text-sm italic"
                                     >
-                                        <span className="not-italic font-semibold text-white/60 font-arose">
+                                        <span className="not-italic font-semibold text-white/60">
                                             Exception:{" "}
                                         </span>
                                         {exc}
