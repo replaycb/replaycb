@@ -5,8 +5,8 @@ import logoImage from "../assets/RECB_Logo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Round 1: Sep 1, 2026 00:00:00 CDT (UTC−5)
-const ROUND_1_START = new Date("2026-09-01T05:00:00Z").getTime();
+// Round 1: Jul 1, 2026 00:00:00 CDT (UTC−5)
+const ROUND_1_START = new Date("2026-07-01T05:00:00Z").getTime();
 
 function getTimeLeft() {
     const diff = ROUND_1_START - Date.now();
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
 
             {/* Hero — full screen */}
-            <section className="h-screen flex items-center justify-center overflow-hidden">
+            <section className="h-full flex items-center justify-center overflow-hidden">
                 <img
                     ref={imgRef}
                     src={logoImage}
@@ -126,28 +126,47 @@ export default function Home() {
             </section>
 
             {/* Blurb section */}
-            <section className="flex items-center justify-center px-6 py-24">
-                <p
+            <section className="flex flex-col items-center justify-center px-6 py-24">
+                <div
                     ref={blurbRef}
-                    className="max-w-4xl text-justify text-white/70 text-lg leading-8"
+                    className="flex flex-col items-center max-w-4xl"
                     style={{ opacity: 0 }}
                 >
-                    Thank you for your interest in RE:CB! RE:CB is a
-                    youtaite-based chorus battle created as a tribute to the
-                    history of chorus battles within our community. Centered
-                    around the theme of &ldquo;songs from other chorus
-                    battles,&rdquo; participating teams will cover songs that
-                    have appeared in at least one previous CB entry. Through
-                    this theme, we hope to encourage participants to revisit
-                    past works, discover entries, and appreciate the evolution
-                    of the CB scene as a whole. This competition is entirely
-                    passion-driven and is not monetized in any way. We hope to
-                    see you join!
-                </p>
+                    <h2 className="text-5xl font-arose font-bold text-main-100 mb-8">
+                        About
+                    </h2>
+                    <p className="text-justify text-white/70 text-lg leading-8 mb-8">
+                        Thank you for your interest in RE:CB! RE:CB is a
+                        youtaite-based chorus battle created as a tribute to the
+                        history of chorus battles within our community. Centered
+                        around the theme of &ldquo;songs from other chorus
+                        battles,&rdquo; participating teams will cover songs
+                        that have appeared in at least one previous CB entry.
+                        Through this theme, we hope to encourage participants to
+                        revisit past works, discover entries, and appreciate the
+                        evolution of the CB scene as a whole. This competition
+                        is entirely passion-driven and is not monetized in any
+                        way. We hope to see you join!
+                        <br />
+                        <br />
+                        To help guide participants in this CB, RE:CB has
+                        compiled a directory of chorus battles from across the
+                        years, along with links to their official playlists. We
+                        hope this serves as a helpful reference moving forward.
+                    </p>
+                    <a
+                        href="https://docs.google.com/spreadsheets/d/1SAJgWRMmhqKNdwoIzI2SYK0w3s5FkHHj_MAiwIJeTik/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 py-2.5 rounded-4xl border  bg-main-100 text-white/80 hover:text-white hover:border-white/50 transition-colors text-xl font-arose"
+                    >
+                        Chorus Battle Directory
+                    </a>
+                </div>
             </section>
 
             {/* Countdown section */}
-            <section className="min-h-screen flex items-center justify-center">
+            <section className="min-h-[70vh] flex items-center justify-center">
                 <div
                     ref={countdownRef}
                     className="text-center"
@@ -156,9 +175,15 @@ export default function Home() {
                     <p className="text-sm font-arose tracking-widest text-white/50 uppercase mb-3">
                         Countdown to
                     </p>
-                    <h2 className="text-3xl sm:text-5xl font-arose font-bold text-white mb-14">
+                    <h2 className="text-3xl sm:text-5xl font-arose font-bold text-main-100 mb-4">
                         Registration <span className="text-main-100"></span>
                     </h2>
+                    <p className="text-5xl font-arose tracking-widest text-white uppercase mt-16 animate-pulse-red-white">
+                        July 1 2026
+                    </p>
+                    <p className="text-sm font-arose tracking-widest text-white/50 uppercase mb-6 mt-4">
+                        12:00 AM CDT
+                    </p>
 
                     {timeLeft ? (
                         <div className="flex gap-4 sm:gap-8 md:gap-16">

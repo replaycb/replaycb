@@ -14,6 +14,7 @@ import Staff from "./pages/Staff";
 function App() {
     useEffect(() => {
         const lenis = new Lenis();
+        window.lenis = lenis;
 
         gsap.ticker.add((time) => {
             lenis.raf(time * 1000);
@@ -23,6 +24,7 @@ function App() {
         return () => {
             gsap.ticker.remove(lenis.raf);
             lenis.destroy();
+            window.lenis = null;
         };
     }, []);
 

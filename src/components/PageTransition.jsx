@@ -7,6 +7,11 @@ export default function PageTransition({ children }) {
     const { pathname } = useLocation();
 
     useEffect(() => {
+        if (window.lenis) {
+            window.lenis.scrollTo(0, { immediate: true });
+        } else {
+            window.scrollTo(0, 0);
+        }
         gsap.fromTo(
             el.current,
             { opacity: 0 },

@@ -35,7 +35,7 @@ export default function Footer() {
         <footer className="w-full py-8 flex justify-center items-center gap-6">
             <a
                 ref={(el) => (iconsRef.current[0] = el)}
-                href="#"
+                href="https://www.youtube.com/@ReplayCB"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
