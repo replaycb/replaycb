@@ -1,23 +1,27 @@
 const rounds = [
     {
         round: "Registration",
-        submission: "July 1 – Aug 31",
+        submission: "Jul 1 – Aug 31",
         judging: "",
+        results: "",
     },
     {
         round: "Round 1",
         submission: "Sep 1 – Oct 31",
         judging: "Nov 1 – Nov 7",
+        results: "Nov 8",
     },
     {
         round: "Round 2",
-        submission: "Nov 8 – Jan 9",
-        judging: "Jan 10 – Jan 16",
+        submission: "Nov 15 – Jan 16",
+        judging: "Jan 16 – Jan 23",
+        results: "Jan 24",
     },
     {
         round: "Round 3",
-        submission: "Jan 17 – Mar 13",
-        judging: "Mar 14 – Mar 20",
+        submission: "Feb 1 – April 3",
+        judging: "April 3 – April 10",
+        results: "April 11",
     },
 ];
 
@@ -31,7 +35,7 @@ export default function Schedule() {
             </div>
 
             <div className="max-w-lg mx-auto flex flex-col">
-                {rounds.map(({ round, submission, judging }, i) => (
+                {rounds.map(({ round, submission, judging, results }, i) => (
                     <div key={round} className="flex gap-6">
                         {/* Timeline spine */}
                         <div className="flex flex-col items-center">
@@ -50,9 +54,14 @@ export default function Schedule() {
                             </h2>
                             <div className="flex flex-col gap-1 text-lg text-white/60">
                                 <span>{submission}</span>
-                                {round !== "Registration" && (
+                                {judging && (
                                     <span className="text-white/40">
                                         Judging: {judging}
+                                    </span>
+                                )}
+                                {results && (
+                                    <span className="text-white/40">
+                                        Results: {results}
                                     </span>
                                 )}
                             </div>
@@ -62,9 +71,7 @@ export default function Schedule() {
             </div>
             <div className="text-center mb-16">
                 <h1 className="text-xs font-normal text-white/50 mb-3">
-                    Schedule is tentative and may be subject to slight changes{" "}
-                    <br />
-                    (e.g., adding a break between judging and the next round)
+                    Schedule is tentative and may be subject to slight changes.
                 </h1>
             </div>
         </main>
