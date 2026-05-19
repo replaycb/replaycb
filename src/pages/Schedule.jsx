@@ -60,6 +60,13 @@ export default function Schedule() {
                     </div>
                 ))}
             </div>
+            <div className="text-center mb-16">
+                <h1 className="text-xs font-normal text-white/50 mb-3">
+                    Schedule is tentative and may be subject to slight changes{" "}
+                    <br />
+                    (e.g., adding a break between judging and the next round)
+                </h1>
+            </div>
         </main>
     );
 }
