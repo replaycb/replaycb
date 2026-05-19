@@ -123,8 +123,7 @@ export default function Rules() {
                                         RE:CB is a chorus battle with the
                                         limitation that teams must cover songs
                                         that have been entered in at least one
-                                        previous chorus battle. not for remaking
-                                        other team's entries.
+                                        previous chorus battle.
                                     </li>
                                     <p className="pl-4 border-l border-white/20 italic my-1">
                                         While we encourage participants to take
@@ -270,7 +269,7 @@ export default function Rules() {
                                         works are strictly prohibited and may
                                         result in heavy penalties or
                                         disqualification. This includes, but is
-                                        not limited to, copying harmony
+                                        not limited to, copying original adlib
                                         arrangements, tracing artwork,
                                         plagiarizing MVs, or using other entries
                                         in your own entry.
