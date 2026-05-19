@@ -19,7 +19,7 @@ const faqs = [
     },
     {
         q: "Can I register for this CB with the same team I was a part of in a previous chorus battle? Would we be able to do remakes of our past chorus battle entries?",
-        a: "Yes - we highly encourage this! Teams may cover songs they have covered in the past, and if all members from the original entry consent to it / are involved, we believe this would be a fun way to showcase progress over the years!",
+        a: "Yes - we highly encourage this! Teams may cover songs they have covered in the past, and if all members from the original entry consent to it / are involved in the remake, we believe this would be a fun way to showcase progress over the years!",
     },
     {
         q: "There's a chorus battle entry with a song that our team wants to cover in RE:CB. However, the entry is unlisted / has removed the CB tag from the video title. Can we still choose this entry?",
