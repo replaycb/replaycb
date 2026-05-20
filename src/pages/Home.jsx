@@ -154,14 +154,22 @@ export default function Home() {
                         years, along with links to their official playlists. We
                         hope this serves as a helpful reference moving forward.
                     </p>
-                    <a
-                        href="https://docs.google.com/spreadsheets/d/1SAJgWRMmhqKNdwoIzI2SYK0w3s5FkHHj_MAiwIJeTik/edit?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-5 py-2.5 rounded-4xl border  bg-main-100 text-white/80 hover:text-white hover:border-white/50 transition-colors text-xl font-arose"
-                    >
-                        Chorus Battle Directory
-                    </a>
+                    <div className="flex flex-wrap gap-4 justify-center">
+                        <a
+                            href="https://docs.google.com/spreadsheets/d/1SAJgWRMmhqKNdwoIzI2SYK0w3s5FkHHj_MAiwIJeTik/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-5 py-2.5 rounded-4xl border  bg-main-100 text-white/80 hover:text-white hover:border-white/50 transition-colors text-xl font-arose"
+                        >
+                            Chorus Battle Directory
+                        </a>
+                        <a
+                            href="https://docs.google.com/spreadsheets/d/1HAhd7WZTlKBtN-F9x07I34pDkUXbCDzj0_kSA9hJHs8/edit?usp=sharing"
+                            className="px-5 py-2.5 rounded-4xl border bg-main-100 text-white/80 hover:text-white hover:border-white/50 transition-colors text-xl font-arose"
+                        >
+                            Group Finder
+                        </a>
+                    </div>
                 </div>
             </section>
 
