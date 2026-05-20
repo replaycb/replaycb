@@ -72,6 +72,10 @@ export default function Rules() {
                                 i.e., The minimum number of team members is 3
                                 and the maximum is 14.
                             </p>
+                            <li>
+                                Participants may only join one team at any given
+                                time.
+                            </li>
                         </ul>
                     </li>
                     <li className="text-white text-lg mb-5 font-semibold">
