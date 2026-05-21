@@ -14,7 +14,7 @@ const faqs = [
         a: "Feel free to DM our official Twitter and we will make the updates! Thank you for your help.",
     },
     {
-        q: "Do HoyoVerse, VocaDuo, or Smule competitions count?",
+        q: "Do Youtaite Tours, HoyoVerse, VocaDuo, or Smule competitions count?",
         a: "No - RE:CB will be focused on Youtaite (community, Youtube-based) cover competitions only.",
     },
     {
