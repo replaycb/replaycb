@@ -160,66 +160,6 @@ export default function Staff() {
                     More coming soon...
                 </p>
             </div>
-            <div className="hidden">
-                <section
-                    ref={(el) => (sectionsRef.current[0] = el)}
-                    className="mb-16"
-                >
-                    <h2 className="text-5xl font-arose text-white mb-6 border-b border-white/10 pb-3">
-                        Host
-                    </h2>
-                    <div className="bg-white/5 rounded-2xl overflow-hidden flex flex-col sm:flex-row">
-                        <img
-                            src={host.image}
-                            alt={host.name}
-                            className="w-full sm:w-64 aspect-square object-cover shrink-0"
-                        />
-                        <div className="p-6 flex flex-col gap-4 flex-1">
-                            <h3 className="text-4xl font-arose text-white">
-                                {host.name}
-                            </h3>
-                            <a
-                                href={host.twitter}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-sky-400 hover:text-sky-300 transition-colors text-sm font-medium w-fit"
-                            >
-                                <svg
-                                    className="w-4 h-4"
-                                    viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                </svg>
-                                Twitter / X
-                            </a>
-                            <p className="text-white/70 leading-relaxed">
-                                {host.blurb}
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <div className="flex flex-col gap-16">
-                    {categories.map((category, i) => (
-                        <section
-                            key={category.name}
-                            ref={(el) => (sectionsRef.current[i + 1] = el)}
-                        >
-                            <h2 className="text-5xl font-arose text-white mb-6 border-b border-white/10 pb-3">
-                                {category.name}
-                            </h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                {category.members.map((member, i) => (
-                                    <StaffCard key={i} member={member} />
-                                ))}
-                            </div>
-                        </section>
-                    ))}
-                </div>
-            </div>
-            {/* Host — full width */}
         </main>
     );
 }
