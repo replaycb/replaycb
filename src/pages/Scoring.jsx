@@ -1,9 +1,9 @@
-const breakdown = [
-    { category: "Vocals", points: 50 },
-    { category: "Mix", points: 50 },
-    { category: "Art", points: 50 },
-    { category: "Animation", points: 50 },
-];
+// const breakdown = [
+//     { category: "Vocals", points: 50 },
+//     { category: "Mix", points: 50 },
+//     { category: "Art", points: 50 },
+//     { category: "Animation", points: 50 },
+// ];
 
 export default function Scoring() {
     return (
