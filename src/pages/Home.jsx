@@ -165,6 +165,7 @@ export default function Home() {
                         </a>
                         <a
                             href="https://docs.google.com/spreadsheets/d/1HAhd7WZTlKBtN-F9x07I34pDkUXbCDzj0_kSA9hJHs8/edit?usp=sharing"
+                            target="_blank"
                             className="px-5 py-2.5 rounded-4xl border bg-main-100 text-white/80 hover:text-white hover:border-white/50 transition-colors text-xl font-arose"
                         >
                             Group Finder
